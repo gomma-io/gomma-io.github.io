@@ -16,13 +16,15 @@ canvas {
 
 .header{
 	text-align: center;
+	padding-top:8px;
+	padding-bottom:8px;
+
 }
 
 a:link {
   text-decoration: none;
 	color: #111111;
 	font-family: Kade;
-
 }
 
 a:visited {
