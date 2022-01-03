@@ -21,7 +21,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight)
 
   letters = []
-  choices = "My business idea     ".split("")
+  choices = "GOMMA is an interaction design studio based in London     ".split("")
   choiceNum = 0
 
   line = new Snake(choices.length)
