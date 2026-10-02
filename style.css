@@ -1,24 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:700&display=swap');
 
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
 body {
 	font-family: Kade;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #ffffff;
 
-	/* background-color: #ffda00; */
+	background-color: #6943FF;
 	color: #333333;
 }
 
 canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
   vertical-align: bottom;
+  /* let a finger draw instead of scrolling the page */
+  touch-action: none;
 }
 
-.header{
+.header, .footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
 	text-align: center;
-	padding-top:8px;
-	padding-bottom:8px;
+	padding: 8px 16px;
+	background-color: #ffffff;
+	color: #111111;
+}
 
+.header {
+	top: 0;
+}
+
+.footer {
+	bottom: 0;
+	padding-bottom: calc(8px + env(safe-area-inset-bottom));
+}
+
+@media (max-width: 420px) {
+	.footer {
+		font-size: 14px;
+	}
 }
 
 a:link {

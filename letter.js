@@ -7,7 +7,7 @@ class Letter {
   }
 
   draw() {
-    textSize(48)
+    textSize(letterSize)
     textFont("Kade")
     textAlign(CENTER, CENTER)
     noStroke()
